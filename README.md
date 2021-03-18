@@ -2,24 +2,27 @@
 
 
 
-### PR for this file: https://github.com/kimmyd70/django_models/pull/1
+### PR for this file: https://github.com/kimmyd70/drf-api/pull/1
 
-This is Lab 27 of 401-Python (seattle-py-401n2)
+This is Lab 31 of 401-Python (seattle-py-401n2)
 
 Developers: Kim Damalas
 
-Date: 5 March 2021
+Date: 17 March 2021
 ____________________
 
 ### Feature Tasks
 
-1. Create `snack_tracker_project` in Django with 2 pages: snack list and snack details
+1. Rebuild a custom version of Blog API demo project from scratch.
 
-2. Create views/urls/templates as needed 
+2. Replace Blog and Post with your own application and model -- `animals` and `Animal`
 
-3. Details page should include snack name, purchaser, and description
+3. Your model must have at least as many fields as demo’s model -- `added_by`, `name`, `description`, `category`, `created_at`, `updated_at`
 
-4. Should be built the “Django way” aka match the structure of in-class demo
+4. Your model must have one field that is a foreign key to user -- `added_by`
+
+NOTE: You are not required to build any templates for this lab.
+
 
 
 __________________
@@ -27,16 +30,10 @@ __________________
 ### Server and Client
 
 - Server: running on local server
-- Client: Django
+- Client: Django/Docker
 
 ____________________
 
 ### Testing
 
-Used integrated Django testing.  NOTE: make sure test extends TestCase instead of SimpleTestCase used in previous class.
-
-1. Test Snack pages
-    - verify status code
-    - verify correct template use
-    - use url name instead of hard coded path
-TIP: django.urls.reverse will help with that.
+Successfully modified provided test to work for this project
